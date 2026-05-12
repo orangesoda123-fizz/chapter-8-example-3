@@ -11,8 +11,8 @@
 #       ./scripts/build-image.sh
 #
 
-set -u # or set -o nounset
+set -u
 : "$CONTAINER_REGISTRY"
 : "$VERSION"
 
-docker build -t $CONTAINER_REGISTRY/video-streaming:$VERSION --file ./Dockerfile-prod .
+docker build -t $CONTAINER_REGISTRY/video-streaming:$VERSION --file ./Dockerfile-prod . 
